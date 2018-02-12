@@ -49,7 +49,7 @@ class App extends Component {
     render() {
         return (
             <section className="shopping-page">
-                <Header numberOfItems = {this.state.cart.length}/>
+                <Header numberOfItems = {this.state.cart.length} />
                 <h1>Shop our featured collection</h1>
                 <main className="featured-collection d-flex">
                     <ProductList

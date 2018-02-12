@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export const Modal = (props) => {
 	return (
-		<main className="modal fade" id="shoppingCartModal" tabIndex="-1" role="dialog" aria-labelledby="shoppingCart" aria-hidden="true">
+		<main className="modal fade" id="shoppingCartModal" tabIndex="-1" role="dialog" aria-labelledby="shoppingCart" >
 			<section className="modal-dialog modal-dialog-centered" role="document">
 				<section className="modal-content">
 					<section className="modal-header">

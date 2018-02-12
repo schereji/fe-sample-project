@@ -13,10 +13,10 @@ export const ShoppingListItem = (props) => {
 	return (
 		<section className="shopping-item row">
 			<div className="image col-5 col-sm-6">
-				<img src={imageUrl} alt={props.item.name} />
+				<img src={imageUrl} alt={props.item.name} aria-hidden="true"/>
 			</div>
 			<div data-shopping-id={props.item.id} className="name-and-cost col-7 col-sm-6">
-				<span onClick={props.removeItemFromCart} className="fa-layers fa-fw delete">
+				<span onClick={props.removeItemFromCart} tabIndex={0} aria-label="Remove From Cart" className="fa-layers fa-fw delete">
 					<i className="fas fa-circle"></i>
 					<i className="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>
 				</span>

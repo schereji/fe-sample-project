@@ -11,12 +11,12 @@ export const Product = (props) => {
 	}
 	
 	return (
-		<section data-id={props.product.id} className="item flex-column col-12 col-md-6 col-lg-3 d-flex">
-			<img src={imageUrl} alt={props.product.name}/>
+		<section data-id={props.product.id} tabIndex={0} className="item flex-column col-12 col-md-6 col-lg-3 d-flex">
+			<img src={imageUrl} alt={props.product.name} aria-hidden="true"/>
 			
 			<p>{props.product.name}</p>
 			<span>${props.product.price}</span>
-			<a onClick ={props.addItemToCart} className="add-to-cart justify-content-center" role="button">
+			<a tabIndex={0} onClick ={props.addItemToCart} className="add-to-cart justify-content-center" role="button">
 				Add to Cart
 			</a>
 		</section>
