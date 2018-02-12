@@ -1,0 +1,260 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #101BCC;
+    font-size: 16px;
+}
+header p,
+header a {
+    color: white;
+}
+
+header p {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+header span {
+    background-color: white;
+    color: #101BCC;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    width: 30px;
+}
+
+header .header-content {
+    align-items: center;
+}
+
+header .header-content a:hover {
+    color: white;
+}
+
+header .header-content button,
+header .header-content button:hover {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+header .header-content button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(21,40,201, 1);
+}
+
+header .header-content .icon {
+    color: white;
+
+}
+
+.shopping-page h1 {
+    display: inline-block;
+    font-size: 22px;
+    padding: 16px 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.featured-collection  {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.featured-collection section {
+    flex-wrap: wrap;
+}
+
+.featured-collection .item {
+    border: 1px solid #CFC0C0;
+    box-shadow: 0 0 5px #E7E7E7;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.featured-collection .item:last-child {
+    float: left;
+}
+
+.featured-collection img {
+    margin: 0 auto;
+    max-width: 260px;
+}
+
+.featured-collection .item p,
+.featured-collection .item span {
+    color: #9F9F9F;
+    font-size: 20px;
+}
+
+.featured-collection .item p {
+    margin-bottom: 0;
+    padding: 20px 0 0;
+}
+
+.featured-collection .item span {
+    color: #4A4A4A;
+    font-size: 22px;
+}
+
+.featured-collection .item a {
+    border: 1px solid #9F9F9F;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 5px 11px;
+    width: 126px;
+}
+
+.featured-collection .item a:hover {
+    background-color: #9F9F9F;
+    color: white;
+}
+
+.modal-header,
+.modal-content {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.modal-header {
+    border: 0;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.modal-header .modal-title {
+    padding: 10px;
+}
+
+.modal-content {
+    background: transparent;
+    border: transparent;
+}
+
+.modal-body {
+    font-size: 20px;
+}
+
+.modal-body .total-cost .line {
+    border-top: 1px solid #393a37;
+    height: 2px;
+    margin: 40px auto 15px;
+    width: 85%;
+}
+.modal-body .total-cost .total-text {
+    padding-left: 7%;
+    text-align: left;
+}
+
+.modal-body .total-cost .total-number {
+    padding-right: 7%;
+    text-align: right;
+}
+
+.modal-body span p {
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+
+.modal-footer button {
+    background-color: transparent;
+    color: #6c757d;
+    width: 130px;
+}
+
+.modal-backdrop {
+    background-color: white;
+    opacity: 0.8;
+}
+.modal-open .featured-collection,
+.modal-open .shopping-page h1 {
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+}
+
+.total-cost .shopping-item {
+    width: 100%;
+}
+
+.total-cost .shopping-item img {
+    max-width: 97px;
+    text-align: right;
+}
+.name-and-cost {
+    font-size: 14px;
+    text-align: right;
+}
+
+.name-and-cost p {
+    margin: 0;
+}
+
+.shopping-item {
+    padding: 10px 0;
+}
+
+.delete {
+    position: absolute;
+    top: 3px;
+    right: -6px;
+}
+
+.delete:hover .fa-circle {
+    color: red;
+}
+
+.delete .fa-circle {
+    color: #D8D8D8;
+}
+
+.delete .fa-times {
+    color: white;
+}
+
+.icon-background {
+    color: #D8D8D8;
+}
+
+.featured-collection .item.selected {
+    border: 1px solid #101BCC;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .shopping-page h1 {
+        text-align: left;
+        padding: 14px 10px 0;
+    }
+
+    .featured-collection .item {
+        max-width: 281px;
+    }
+}
+
+@media only screen and (min-width: 1048px) {
+    .featured-collection .item {
+        max-width: 240px;
+    }
+
+    .featured-collection img {
+        margin: 0 auto;
+        max-width: 230px;
+    }
+
+}
